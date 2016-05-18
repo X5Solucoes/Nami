@@ -42,7 +42,7 @@ var timer = require('timers');
  */
 function Nami(amiData) {
     Nami.super_.call(this);
-    this.C = require('log4js').getLogger('Nami.Client');
+    this.logger = require('log4js').getLogger('Nami.Client');
     this.connected = false;
     this.amiData = amiData;
     this.EOL = "\r\n";
