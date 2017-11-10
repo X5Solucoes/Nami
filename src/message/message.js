@@ -82,7 +82,7 @@ Message.prototype.unmarshall = function (data) {
         } else if (parts.length === 1) {
             value = parts[0];
         }
-        var keySafe = key.replace(/-/, '_').toLowerCase();
+        var keySafe = key.replace(/-/, '_');
         var valueSafe = value.replace(/^\s+/g, '').replace(/\s+$/g, '');
         /*
          * SetVar contains Variable: header, but value should not include '=' in this case
